@@ -1,12 +1,12 @@
 #include <stdio.h>
-#include "merge_sort.h"
+#include "heap_sort.h"
 
 int main()
 {
     int arr[5] = {5,4,3,2,1};
     int i;
 
-    mergeSort(arr,0,4);
+    heapSort(arr, 5);
 
     for(i=0;i<5;i++)
     {
