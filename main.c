@@ -4,6 +4,7 @@
 int main()
 {
     Node* head = NULL;
+
     head = createNode(10);
 
     Node* temp = head;
@@ -15,6 +16,10 @@ int main()
     temp = temp->next;
 
     temp->next = createNode(40);
+
+    printList(head);
+
+    insertAfter(head->next, 25);
 
     printList(head);
 

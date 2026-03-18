@@ -9,5 +9,7 @@ typedef struct Node
 
 Node* createNode(int data);
 void printList(Node* head);
+void insertNode(Node* node, int data);
+void insertAfter(Node* node, int data);
 
 #endif
