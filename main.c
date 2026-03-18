@@ -1,19 +1,22 @@
 #include <stdio.h>
-#include "heap_sort.h"
+#include "linked_list.h"
 
 int main()
 {
-    int arr[5] = {5,4,3,2,1};
-    int i;
+    Node* head = NULL;
+    head = createNode(10);
 
-    heapSort(arr, 5);
+    Node* temp = head;
 
-    for(i=0;i<5;i++)
-    {
-        printf("%d ",arr[i]);
-    }
+    temp->next = createNode(20);
+    temp = temp->next;
 
-    printf("\n");
+    temp->next = createNode(30);
+    temp = temp->next;
+
+    temp->next = createNode(40);
+
+    printList(head);
 
     return 0;
 }
